@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6532D27F2A1A712B0084FD4B /* DeepLinkProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D27E2A1A712B0084FD4B /* DeepLinkProjectApp.swift */; };
+		6532D2812A1A712B0084FD4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2802A1A712B0084FD4B /* ContentView.swift */; };
+		6532D2832A1A712C0084FD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6532D2822A1A712C0084FD4B /* Assets.xcassets */; };
+		6532D2862A1A712C0084FD4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6532D2852A1A712C0084FD4B /* Preview Assets.xcassets */; };
+		6532D2B32A1AC0810084FD4B /* GPSLocationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B22A1AC0810084FD4B /* GPSLocationsService.swift */; };
+		6532D2B52A1AC0920084FD4B /* GPSLocationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B42A1AC0920084FD4B /* GPSLocationsRequest.swift */; };
+		6532D2B72A1AC09D0084FD4B /* GPSLocationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B62A1AC09D0084FD4B /* GPSLocationsAssembly.swift */; };
+		6532D2B92A1AC1130084FD4B /* GPSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B82A1AC1130084FD4B /* GPSLocation.swift */; };
+		6532D2C72A1AC6B30084FD4B /* GPSLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2C62A1AC6B30084FD4B /* GPSLocationViewModel.swift */; };
+		6532D2C92A1AC9D40084FD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2C82A1AC9D40084FD4B /* AppDelegate.swift */; };
+		6532D2CB2A1ACEB20084FD4B /* GpsLocationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2CA2A1ACEB20084FD4B /* GpsLocationList.swift */; };
+		6532D2D12A1AD3490084FD4B /* CLPlacemark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2D02A1AD3490084FD4B /* CLPlacemark+Extension.swift */; };
+		6532D2D32A1AD3B00084FD4B /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2D22A1AD3B00084FD4B /* CLLocation+Extension.swift */; };
+		65383DDE2A1C09D200F4B4C8 /* ServiceUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65383DDD2A1C09D200F4B4C8 /* ServiceUnitTests.swift */; };
+		65383DE32A1C106300F4B4C8 /* AppTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65383DE22A1C106300F4B4C8 /* AppTitles.swift */; };
+		653B73AC2A1BA5F7004DA43B /* CoordinatesUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B73AB2A1BA5F7004DA43B /* CoordinatesUnitTests.swift */; };
+		653B73B52A1BA7F3004DA43B /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 653B73B42A1BA7F3004DA43B /* Moya */; settings = {ATTRIBUTES = (Weak, ); }; };
+		653B73BC2A1BA95A004DA43B /* GPSLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2C62A1AC6B30084FD4B /* GPSLocationViewModel.swift */; };
+		653B73BD2A1BA984004DA43B /* GPSLocationsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B62A1AC09D0084FD4B /* GPSLocationsAssembly.swift */; };
+		653B73BE2A1BA984004DA43B /* GPSLocationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B22A1AC0810084FD4B /* GPSLocationsService.swift */; };
+		653B73BF2A1BA984004DA43B /* GPSLocationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B42A1AC0920084FD4B /* GPSLocationsRequest.swift */; };
+		653B73C02A1BA987004DA43B /* GPSLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2B82A1AC1130084FD4B /* GPSLocation.swift */; };
+		653B73C12A1BA9A4004DA43B /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2D22A1AD3B00084FD4B /* CLLocation+Extension.swift */; };
+		653B73C22A1BA9A4004DA43B /* CLPlacemark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532D2D02A1AD3490084FD4B /* CLPlacemark+Extension.swift */; };
+		653B73D32A1BB9B8004DA43B /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B73D22A1BB9B8004DA43B /* SampleData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		653B73AD2A1BA5F7004DA43B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6532D2732A1A712B0084FD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6532D27A2A1A712B0084FD4B;
+			remoteInfo = DeepLinkProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6532D27B2A1A712B0084FD4B /* DeepLinkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLinkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6532D27E2A1A712B0084FD4B /* DeepLinkProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkProjectApp.swift; sourceTree = "<group>"; };
+		6532D2802A1A712B0084FD4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6532D2822A1A712C0084FD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6532D2852A1A712C0084FD4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6532D2B22A1AC0810084FD4B /* GPSLocationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSLocationsService.swift; sourceTree = "<group>"; };
+		6532D2B42A1AC0920084FD4B /* GPSLocationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSLocationsRequest.swift; sourceTree = "<group>"; };
+		6532D2B62A1AC09D0084FD4B /* GPSLocationsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSLocationsAssembly.swift; sourceTree = "<group>"; };
+		6532D2B82A1AC1130084FD4B /* GPSLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSLocation.swift; sourceTree = "<group>"; };
+		6532D2C62A1AC6B30084FD4B /* GPSLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSLocationViewModel.swift; sourceTree = "<group>"; };
+		6532D2C82A1AC9D40084FD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6532D2CA2A1ACEB20084FD4B /* GpsLocationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsLocationList.swift; sourceTree = "<group>"; };
+		6532D2D02A1AD3490084FD4B /* CLPlacemark+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLPlacemark+Extension.swift"; sourceTree = "<group>"; };
+		6532D2D22A1AD3B00084FD4B /* CLLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		65383DDD2A1C09D200F4B4C8 /* ServiceUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUnitTests.swift; sourceTree = "<group>"; };
+		65383DE22A1C106300F4B4C8 /* AppTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitles.swift; sourceTree = "<group>"; };
+		653B73A92A1BA5F7004DA43B /* DeepLinkProjectUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLinkProjectUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		653B73AB2A1BA5F7004DA43B /* CoordinatesUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesUnitTests.swift; sourceTree = "<group>"; };
+		653B73B72A1BA874004DA43B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		653B73D22A1BB9B8004DA43B /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6532D2782A1A712B0084FD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653B73B52A1BA7F3004DA43B /* Moya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653B73A62A1BA5F7004DA43B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6532D2722A1A712B0084FD4B = {
+			isa = PBXGroup;
+			children = (
+				6532D27D2A1A712B0084FD4B /* DeepLinkProject */,
+				653B73AA2A1BA5F7004DA43B /* DeepLinkProjectUnitTests */,
+				6532D27C2A1A712B0084FD4B /* Products */,
+				653B73B62A1BA873004DA43B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6532D27C2A1A712B0084FD4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6532D27B2A1A712B0084FD4B /* DeepLinkProject.app */,
+				653B73A92A1BA5F7004DA43B /* DeepLinkProjectUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6532D27D2A1A712B0084FD4B /* DeepLinkProject */ = {
+			isa = PBXGroup;
+			children = (
+				653B73A42A1BA55D004DA43B /* App */,
+				6532D2A92A1ABBAE0084FD4B /* Common */,
+				6532D2AA2A1ABBB50084FD4B /* Model */,
+				6532D2AB2A1ABBBC0084FD4B /* Services */,
+				6532D2AC2A1ABBC50084FD4B /* View */,
+				6532D2AD2A1ABBCB0084FD4B /* ViewModel */,
+				6532D2822A1A712C0084FD4B /* Assets.xcassets */,
+				6532D2842A1A712C0084FD4B /* Preview Content */,
+			);
+			path = DeepLinkProject;
+			sourceTree = "<group>";
+		};
+		6532D2842A1A712C0084FD4B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2852A1A712C0084FD4B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6532D2A92A1ABBAE0084FD4B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				65383DE12A1C102C00F4B4C8 /* Enums */,
+				6532D2CF2A1AD3390084FD4B /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6532D2AA2A1ABBB50084FD4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2B82A1AC1130084FD4B /* GPSLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6532D2AB2A1ABBBC0084FD4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2CE2A1AD2F00084FD4B /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6532D2AC2A1ABBC50084FD4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2802A1A712B0084FD4B /* ContentView.swift */,
+				6532D2CA2A1ACEB20084FD4B /* GpsLocationList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6532D2AD2A1ABBCB0084FD4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2C62A1AC6B30084FD4B /* GPSLocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6532D2CE2A1AD2F00084FD4B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2B22A1AC0810084FD4B /* GPSLocationsService.swift */,
+				6532D2B42A1AC0920084FD4B /* GPSLocationsRequest.swift */,
+				6532D2B62A1AC09D0084FD4B /* GPSLocationsAssembly.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6532D2CF2A1AD3390084FD4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2D02A1AD3490084FD4B /* CLPlacemark+Extension.swift */,
+				6532D2D22A1AD3B00084FD4B /* CLLocation+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		65383DE12A1C102C00F4B4C8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				65383DE22A1C106300F4B4C8 /* AppTitles.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		653B73A42A1BA55D004DA43B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6532D2C82A1AC9D40084FD4B /* AppDelegate.swift */,
+				6532D27E2A1A712B0084FD4B /* DeepLinkProjectApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		653B73AA2A1BA5F7004DA43B /* DeepLinkProjectUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				653B73D12A1BB9AB004DA43B /* Helper */,
+				653B73AB2A1BA5F7004DA43B /* CoordinatesUnitTests.swift */,
+				65383DDD2A1C09D200F4B4C8 /* ServiceUnitTests.swift */,
+			);
+			path = DeepLinkProjectUnitTests;
+			sourceTree = "<group>";
+		};
+		653B73B62A1BA873004DA43B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				653B73B72A1BA874004DA43B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		653B73D12A1BB9AB004DA43B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				653B73D22A1BB9B8004DA43B /* SampleData.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6532D27A2A1A712B0084FD4B /* DeepLinkProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6532D2892A1A712C0084FD4B /* Build configuration list for PBXNativeTarget "DeepLinkProject" */;
+			buildPhases = (
+				6532D2772A1A712B0084FD4B /* Sources */,
+				6532D2782A1A712B0084FD4B /* Frameworks */,
+				6532D2792A1A712B0084FD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepLinkProject;
+			packageProductDependencies = (
+				653B73B42A1BA7F3004DA43B /* Moya */,
+			);
+			productName = DeepLinkProject;
+			productReference = 6532D27B2A1A712B0084FD4B /* DeepLinkProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		653B73A82A1BA5F7004DA43B /* DeepLinkProjectUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653B73AF2A1BA5F7004DA43B /* Build configuration list for PBXNativeTarget "DeepLinkProjectUnitTests" */;
+			buildPhases = (
+				653B73A52A1BA5F7004DA43B /* Sources */,
+				653B73A62A1BA5F7004DA43B /* Frameworks */,
+				653B73A72A1BA5F7004DA43B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653B73AE2A1BA5F7004DA43B /* PBXTargetDependency */,
+			);
+			name = DeepLinkProjectUnitTests;
+			productName = DeepLinkProjectUnitTests;
+			productReference = 653B73A92A1BA5F7004DA43B /* DeepLinkProjectUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6532D2732A1A712B0084FD4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6532D27A2A1A712B0084FD4B = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					653B73A82A1BA5F7004DA43B = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 6532D27A2A1A712B0084FD4B;
+					};
+				};
+			};
+			buildConfigurationList = 6532D2762A1A712B0084FD4B /* Build configuration list for PBXProject "DeepLinkProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6532D2722A1A712B0084FD4B;
+			packageReferences = (
+				653B73B32A1BA7F3004DA43B /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 6532D27C2A1A712B0084FD4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6532D27A2A1A712B0084FD4B /* DeepLinkProject */,
+				653B73A82A1BA5F7004DA43B /* DeepLinkProjectUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6532D2792A1A712B0084FD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6532D2862A1A712C0084FD4B /* Preview Assets.xcassets in Resources */,
+				6532D2832A1A712C0084FD4B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653B73A72A1BA5F7004DA43B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6532D2772A1A712B0084FD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65383DE32A1C106300F4B4C8 /* AppTitles.swift in Sources */,
+				6532D2C92A1AC9D40084FD4B /* AppDelegate.swift in Sources */,
+				6532D2812A1A712B0084FD4B /* ContentView.swift in Sources */,
+				6532D27F2A1A712B0084FD4B /* DeepLinkProjectApp.swift in Sources */,
+				6532D2B32A1AC0810084FD4B /* GPSLocationsService.swift in Sources */,
+				6532D2C72A1AC6B30084FD4B /* GPSLocationViewModel.swift in Sources */,
+				6532D2D32A1AD3B00084FD4B /* CLLocation+Extension.swift in Sources */,
+				6532D2CB2A1ACEB20084FD4B /* GpsLocationList.swift in Sources */,
+				6532D2B92A1AC1130084FD4B /* GPSLocation.swift in Sources */,
+				6532D2B72A1AC09D0084FD4B /* GPSLocationsAssembly.swift in Sources */,
+				6532D2B52A1AC0920084FD4B /* GPSLocationsRequest.swift in Sources */,
+				6532D2D12A1AD3490084FD4B /* CLPlacemark+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653B73A52A1BA5F7004DA43B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				653B73BC2A1BA95A004DA43B /* GPSLocationViewModel.swift in Sources */,
+				653B73AC2A1BA5F7004DA43B /* CoordinatesUnitTests.swift in Sources */,
+				653B73BD2A1BA984004DA43B /* GPSLocationsAssembly.swift in Sources */,
+				65383DDE2A1C09D200F4B4C8 /* ServiceUnitTests.swift in Sources */,
+				653B73C02A1BA987004DA43B /* GPSLocation.swift in Sources */,
+				653B73C12A1BA9A4004DA43B /* CLLocation+Extension.swift in Sources */,
+				653B73C22A1BA9A4004DA43B /* CLPlacemark+Extension.swift in Sources */,
+				653B73BE2A1BA984004DA43B /* GPSLocationsService.swift in Sources */,
+				653B73D32A1BB9B8004DA43B /* SampleData.swift in Sources */,
+				653B73BF2A1BA984004DA43B /* GPSLocationsRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		653B73AE2A1BA5F7004DA43B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6532D27A2A1A712B0084FD4B /* DeepLinkProject */;
+			targetProxy = 653B73AD2A1BA5F7004DA43B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6532D2872A1A712C0084FD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6532D2882A1A712C0084FD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6532D28A2A1A712C0084FD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepLinkProject/Preview Content\"";
+				DEVELOPMENT_TEAM = J9TB685834;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = DeepLink.SampleApp.iOS.DeepLinkProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6532D28B2A1A712C0084FD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepLinkProject/Preview Content\"";
+				DEVELOPMENT_TEAM = J9TB685834;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = DeepLink.SampleApp.iOS.DeepLinkProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		653B73B02A1BA5F7004DA43B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9TB685834;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = DeepLink.SampleApp.iOS.DeepLinkProjectUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepLinkProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeepLinkProject";
+			};
+			name = Debug;
+		};
+		653B73B12A1BA5F7004DA43B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9TB685834;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = DeepLink.SampleApp.iOS.DeepLinkProjectUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepLinkProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeepLinkProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6532D2762A1A712B0084FD4B /* Build configuration list for PBXProject "DeepLinkProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6532D2872A1A712C0084FD4B /* Debug */,
+				6532D2882A1A712C0084FD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6532D2892A1A712C0084FD4B /* Build configuration list for PBXNativeTarget "DeepLinkProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6532D28A2A1A712C0084FD4B /* Debug */,
+				6532D28B2A1A712C0084FD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		653B73AF2A1BA5F7004DA43B /* Build configuration list for PBXNativeTarget "DeepLinkProjectUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653B73B02A1BA5F7004DA43B /* Debug */,
+				653B73B12A1BA5F7004DA43B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		653B73B32A1BA7F3004DA43B /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		653B73B42A1BA7F3004DA43B /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 653B73B32A1BA7F3004DA43B /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6532D2732A1A712B0084FD4B /* Project object */;
+}
